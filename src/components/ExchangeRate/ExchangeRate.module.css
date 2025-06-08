@@ -21,3 +21,16 @@
     font-weight: 500;
     font-size: 24px;
 }
+
+.delta {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #26DF73;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.delta.falling {
+    color: #DF2641;
+}

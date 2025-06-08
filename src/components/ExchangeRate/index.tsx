@@ -1,5 +1,8 @@
 import styles from './ExchangeRate.module.css';
 import React from "react";
+import clsx from "clsx";
+import risingIcon from "../../assets/icons/rate-rise.svg";
+import fallingIcon from "../../assets/icons/rate-down.svg";
 
 interface ExchangeRateItemProps {
   icon: React.ReactNode;
@@ -11,7 +14,12 @@ function ExchangeRateItem({icon, value, delta}: ExchangeRateItemProps) {
   return (
     <div className={styles.item}>
       <span className={styles.value}>{icon} {value}₽</span>
-      <span>{delta}₽</span>
+      <span className={clsx(styles.delta, {
+        [styles.falling]: delta < 0
+      })}>
+        <img src={delta < 0 ? fallingIcon : risingIcon} alt=""/>
+        {Math.abs(delta)}₽
+      </span>
     </div>
   )
 }
