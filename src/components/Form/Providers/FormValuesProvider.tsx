@@ -1,5 +1,5 @@
 import React, {type PropsWithChildren, useContext, useState} from "react";
-import type {FormInputField} from "../types.ts";
+import type {DropdownInputField, FormInputField} from "../types.ts";
 
 const FormValuesContext = React.createContext<{
   values: Record<string, unknown>;
@@ -15,7 +15,7 @@ interface FormValuesProviderProps extends PropsWithChildren {
 
 function prepareInitialValues(inputs: FormInputField[]) {
   return inputs.reduce<Record<string, unknown>>((acc, item) => {
-    acc[item.id] = item.type === 'dropdown' ? item.preselectedOption : '';
+    acc[item.id] = item.type === 'dropdown' ? (item as DropdownInputField).preselectedOption : '';
 
     return acc;
   }, {});
