@@ -1,0 +1,17 @@
+.tabs {
+    display: flex;
+    gap: 6px;
+}
+
+.tab {
+    padding: 8px 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+}
+
+.tab.active {
+    background-color: var(--light);
+    box-shadow: var(--box-shadow);
+}

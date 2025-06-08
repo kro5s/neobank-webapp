@@ -1,0 +1,15 @@
+.rate {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.rateValue {
+    color: var(--accent-purple);
+    font-weight: 700;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

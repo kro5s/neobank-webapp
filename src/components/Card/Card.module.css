@@ -1,0 +1,43 @@
+.card {
+    display: block;
+    color: inherit;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+    box-shadow:  var(--box-shadow);
+    padding: 10px;
+    position: relative;
+}
+
+.subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.total {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.dateInfo {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.details {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #1E5EC1;
+    font-size: 14px;
+    padding: 4px 6px;
+}

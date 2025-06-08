@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.tgId {
+    color: var(--text-secondary);
+    font-size: 14px;
+}

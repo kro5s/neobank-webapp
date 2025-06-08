@@ -1,0 +1,16 @@
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(82, 91, 91, 0.3);
+}
+
+.status.active {
+    color: #025237;
+    background-color: #D3EDE4;
+}
+
+.status.closed {
+    color: #520203;
+    background-color: #EDD3D3;
+}
